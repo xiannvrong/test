@@ -1,7 +1,7 @@
 <!--pages/mine/mine.wxml-->
-<view>
+<view class='top'>
  <view>{{ msg }}</view>
-  <button bindtap="clickMe" class='touch'>点我点我点我！！</button>
+  <button bindtap="clickMe">点我点我点我！！</button>
 
  
   <view id='tabTest' data-hi='WeChat' bindtap="tapName">Click Me!!</view>

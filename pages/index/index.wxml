@@ -31,10 +31,14 @@
  
     
   </view>
-
-
   <view class="{{selected?'show':'hidden'}}">product</view>
   <view class="{{selected1?'show':'hidden'}}">shop</view> 
+
+  <view class='count'>
+    <button>-</button>
+    <view>{{count}}</view>
+    <button>+</button>
+  </view>
 </view>
 
 

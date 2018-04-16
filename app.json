@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/catalogue/catalogue",
-    "pages/mine/mine"
+    "pages/mine/mine",
+    "pages/count/count"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -32,6 +33,12 @@
       {
         "text": "我的",
         "pagePath": "pages/mine/mine",
+        "iconPath": "images/me_icon_shop@2x.png",
+        "selectedIconPath": "images/me_icon_shop@3x.png"
+      },
+      {
+        "text": "数字",
+        "pagePath": "pages/count/count",
         "iconPath": "images/me_icon_shop@2x.png",
         "selectedIconPath": "images/me_icon_shop@3x.png"
       }

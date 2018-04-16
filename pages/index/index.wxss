@@ -47,3 +47,8 @@ page{
   left: 20rpx;
    color: #000; 
 }
+.count{
+  display: flex;
+  flex-direction: row;
+  margin-top: 100rpx;
+}

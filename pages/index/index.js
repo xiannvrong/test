@@ -7,7 +7,10 @@ Page({
     motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    count:0,
+    selected: true,
+    selected1: false
   },
   //事件处理函数
   bindViewTap: function() {
@@ -51,10 +54,6 @@ Page({
       hasUserInfo: true
     })
   },
-  data: {
-    selected: true,
-    selected1: false
-  },
   selected: function (e) {
     this.setData({
       selected1: false,
@@ -70,7 +69,23 @@ Page({
   
   clickdp:function(){
     this.setData({msg:'可可里小姐美装'})
-  }
-})
+  },
 
-  
+
+  //生命周期
+  onLoad: function () {
+    console.log("page ---onLoad---");
+  },
+  onReady: function () {
+    console.log("page ---onReady---");
+  },
+  onShow: function () {
+    console.log("page ---onShow---");
+  },
+  onHide: function () {
+    console.log("page ---onHide---");
+  },
+  onUnload: function () {
+    console.log("page ---onUnload---");
+  }
+});

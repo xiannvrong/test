@@ -13,3 +13,9 @@
   width: 75rpx;
   height: 150rpx;
 }
+.top{
+  position: absolute;
+  top: 300rpx;
+  left: 10rpx;
+  width: 100%;
+}
