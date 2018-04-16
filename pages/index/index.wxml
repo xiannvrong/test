@@ -1,0 +1,40 @@
+<!--index.wxml-->
+<!-- <view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+
+  <map></map>
+</view> -->
+
+
+<view class="body">
+  <view class="nav bc_white">
+
+    <!-- <view class='default' wx:if="{{selected?'red':'default'}}" bindtap='selected'>店铺</view>
+    <view class='default' wx:if="{{selected1?'red':'default'}}" bindtap='selected1'>商品</view> -->
+
+
+    <view class="{{selected?'red':'default'}}" bindtap="selected">
+    <text>店铺</text>
+      <button class='left' bindtap='clickdp' size='mini' type='warn'>店铺按钮</button>
+      <text class='aa'>{{msg}}</text>
+    </view>
+    <view class="{{selected1?'red':'default'}}" bindtap="selected1">商品</view>
+ 
+    
+  </view>
+
+
+  <view class="{{selected?'show':'hidden'}}">product</view>
+  <view class="{{selected1?'show':'hidden'}}">shop</view> 
+</view>
+
+

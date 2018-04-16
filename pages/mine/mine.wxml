@@ -1,0 +1,23 @@
+<!--pages/mine/mine.wxml-->
+<view>
+ <view>{{ msg }}</view>
+  <button bindtap="clickMe" class='touch'>点我点我点我！！</button>
+
+ 
+  <view id='tabTest' data-hi='WeChat' bindtap="tapName">Click Me!!</view>
+
+  <progress percent="20" show-info />
+  <progress percent="40" stroke-width="12" />
+  <progress percent="60" color="pink" />
+  <progress percent="80" active />
+</view>
+
+
+<view>
+  <block wx:for="{{stars}}">
+    <image class="star-image" style="left: {{item*150}}rpx" src="{{key > item ?(key-item == 0.5?halfSrc:selectedSrc) : normalSrc}}">
+      <view class="item" style="left:0rpx" data-key="{{item+0.5}}" bindtap="selectLeft"></view>
+      <view class="item" style="left:75rpx" data-key="{{item+1}}" bindtap="selectRight"></view>
+    </image>
+  </block>
+</view>
